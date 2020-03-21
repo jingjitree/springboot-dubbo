@@ -1,0 +1,22 @@
+dubbo:
+  version: 1.0.0
+  application:
+    #给provider起名称
+    name: dubbo-provider
+  registry:
+    protocol: zookeeper
+    #注册地址
+    address: 10.10.21.89:2181
+  protocol:
+    #dubbo协议
+    name: dubbo
+    #端口
+    port: 20880
+  scan:
+    base-packages: top.inson.dubbo.service
+
+
+
+
+
+

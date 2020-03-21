@@ -1,0 +1,6 @@
+server:
+  port: 9980
+  servlet:
+    context-path: /dubbo-consumer
+
+
