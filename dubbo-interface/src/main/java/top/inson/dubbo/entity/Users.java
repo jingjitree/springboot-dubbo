@@ -2,9 +2,11 @@ package top.inson.dubbo.entity;
 
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @TableName(value = "users")
 public class Users extends BaseEntity<Users> implements java.io.Serializable{
 
