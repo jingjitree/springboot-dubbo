@@ -9,11 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <parent>
         <groupId>top.inson.dubbo</groupId>
         <artifactId>springboot-dubbo</artifactId>
@@ -37,11 +32,35 @@
             <scope>test</scope>
         </dependency>
 
-        <!--引入服务提供者-->
+        <!--引入服务接口-->
         <dependency>
             <groupId>top.inson.dubbo</groupId>
-            <artifactId>dubbo-provider</artifactId>
+            <artifactId>dubbo-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--dubbo依赖-->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>${dubbo.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>

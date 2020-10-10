@@ -3,4 +3,9 @@ server:
   servlet:
     context-path: /dubbo-consumer
 
+spring:
+  profiles:
+    include: consumer
+  application:
+    name: spring-consumer
 
