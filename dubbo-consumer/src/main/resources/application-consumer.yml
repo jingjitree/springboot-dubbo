@@ -2,12 +2,6 @@ dubbo:
   application:
     id: spring-consumer
     name: spring-consumer
-
-  protocol:
-    #dubbo协议
-    name: dubbo
-    #端口
-    port: 20880
   registry:
     protocol: zookeeper
     address: 10.10.20.199:2181
