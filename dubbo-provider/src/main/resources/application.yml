@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: @profile.active@
+    active: @profiles.active@
     include: provider
   application:
     name: spring-provider
@@ -40,3 +40,6 @@ mybatis-plus:
     id-type: 0
     #字段策略 0：忽略判断 1.非null判断 2.非空判断
     field-strategy: 1
+
+logging:
+  config: classpath:logback-black.xml

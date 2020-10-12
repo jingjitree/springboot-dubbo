@@ -5,7 +5,10 @@ server:
 
 spring:
   profiles:
+    active: @profiles.active@
     include: consumer
   application:
     name: spring-consumer
 
+logging:
+  config: classpath:logback-black.xml

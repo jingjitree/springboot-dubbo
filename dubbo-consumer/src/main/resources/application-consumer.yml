@@ -1,10 +1,9 @@
 dubbo:
   application:
     id: spring-consumer
-    name: spring-consumer
+    name: dubbo-consumer
   registry:
     protocol: zookeeper
-    address: 10.10.20.199:2181
   #消费者配置
   consumer:
     version: 1.0.0

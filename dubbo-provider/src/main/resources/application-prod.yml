@@ -1,0 +1,7 @@
+dubbo:
+  registry:
+    #注册地址
+    address: 10.10.20.199:2181
+
+
+

@@ -6,8 +6,13 @@ spring:
     username: root
     password: 123456
 
+dubbo:
+  registry:
+    #注册地址
+    address: 10.10.20.199:2181
+
 #日志打印配置
-logging:
-  level:
-    root: info
+#logging:
+#  level:
+#    root: info
   #file: logs/dubbo-provider/dubbo-provider.log
