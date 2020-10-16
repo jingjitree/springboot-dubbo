@@ -4,8 +4,6 @@ dubbo:
     id: spring-provider
     #给provider起名称
     name: dubbo-provider
-  registry:
-    protocol: zookeeper
   protocol:
     #dubbo协议
     name: dubbo
@@ -15,7 +13,5 @@ dubbo:
     base-packages: top.inson.dubbo.service
   #提供者配置
   provider:
-    name: dubbo
-    protocol: dubbo
     version: 1.0.0
     timeout: 30000

@@ -8,11 +8,5 @@ spring:
 
 dubbo:
   registry:
-    #注册地址
-    address: 10.10.20.199:2181
-
-#日志打印配置
-#logging:
-#  level:
-#    root: info
-  #file: logs/dubbo-provider/dubbo-provider.log
+    #注册地址 http://127.0.0.1:80
+    address: zookeeper://10.10.20.199:2181
