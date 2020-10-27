@@ -9,4 +9,5 @@ spring:
 dubbo:
   registry:
     #注册地址 http://127.0.0.1:80
-    address: zookeeper://10.10.20.89:2181
+    #address: zookeeper://10.10.20.89:2181
+    address: nacos://10.10.20.89:8848

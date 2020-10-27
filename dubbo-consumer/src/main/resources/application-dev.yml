@@ -1,3 +1,4 @@
 dubbo:
   registry:
-    address: zookeeper://10.10.20.89:2181
+    #address: zookeeper://10.10.20.89:2181
+    address: nacos://10.10.20.89:8848
